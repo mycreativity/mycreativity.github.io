@@ -1,0 +1,104 @@
+/* reset html */
+html, body { width:100%; min-height:100%; height:auto !important; height:100%; margin:0; padding:0; }
+ul, ol, dl { list-style:none; }
+ul,ol,li,h1,h2,h3,h4,h5,h6,strong,em,pre,form,body,html,p,blockquote,cite,code,fieldset,legend,input,embed,object,param,dl,dd,dt,kbd,samp,var,tt { margin:0; padding:0; font-style:normal; font-weight:normal; }
+a img,:link img,:visited img { border:none; }
+embed,object,param { display:block; }
+
+/* typography */
+a, a:hover,a:visited,a:active,a:link,a:focus {  }
+	/* never reset focus as this is a valuable visible aid for screenreaders... but as you know most clients hate it... */
+	a:focus, object:focus { outline:none; }
+
+/* form elements */
+input[type=text]:focus, input[type=password]:focus, textarea:focus { outline: 0 none; }
+input[type=submit] { cursor:pointer; }
+input,fieldset,select,radio,textarea,button { background-color:transparent; border:none; overflow:visible; /* trigger haslayout for ie6/7, fixes the width bug on input's and buttons... */ }
+	/* disabling safari resize handles */
+	textarea { resize:none; }
+
+/* - adjusted clearfix for FI. Fixes IE6 min-height issues when clearfix is used on a div */
+.clearfix:after { content:" "; display:block; height:0; width:100%; clear:both; visibility:hidden; }
+
+/*
+Colors used:
+Light gray: #999;
+Gray: #666;
+Black: #000;
+Pink: #ca278c;
+*/
+
+body { background:#FFF; font-family: Arial, Verdana; font-size:12px; }
+
+h1, h2, h3, h4, h5, h6 { font-family:'Arapey', serif; margin-bottom:10px; }
+h1 { font-size:32px; }
+h2 { font-size:26px; }
+h6 { font-family:'Open Sans Condensed', sans-serif; font-size:26px; }
+
+.shdw { box-shadow: 1px 1px 2px 2px #999; }
+
+p { margin-bottom:20px; font-size: 12px; color:#666; line-height: 18px; }
+a { color:#ca278c; }
+a:hover { text-decoration:none; }
+
+pre { margin-bottom:20px; display: block; }
+
+#con { position:relative; margin:0 auto; width:960px; }
+
+
+#hdr { position:absolute; top:0; width:960px; height:90px; border-bottom:solid 1px #ccc; background-color:white; }
+#hdr .lgo { position:absolute; top:31px; left:0; }
+#hdr #mnu { position:absolute; top:10px; left:140px; }
+#hdr #mnu li { float:left; margin-left:30px;}
+#hdr #mnu li a { float:left; line-height:50px; height:50px; font-size:18px; text-decoration:none; color:#666; font-family:'Open Sans Condensed', sans-serif; }
+#hdr #mnu li a:hover { color:#ca278c; }
+#hdr #scl { position:absolute; right:0px; bottom:9px; height:20px; }
+#hdr #src { position:absolute; right:0; top:21px; }
+#hdr #src input { width:200px; padding-right:30px; background:transparent url('../images/search.png') no-repeat 210px 50%; }
+
+#bdy { padding-top:110px; }
+#bdy #ctr { float:left; width:660px; min-height:200px; }
+#bdy #ctr #cnt { width:660px; }
+#bdy #rgt { float:left; width:300px; min-height:200px; }
+
+#ftr { margin-top:10px; border-top: solid 1px #ccc; }
+#ftr p { font-size:10px; color:#666; font-size:11px; }
+
+/* blocks */
+#blcks { float:left; width:280px; padding-left:20px; }
+#blcks .blck { margin-bottom:20px; }
+
+/* block - list articles */
+#blcks .lst-art ul li { margin-bottom:10px; padding-left:20px; background:transparent url('../images/arrow_small.png') no-repeat 2px 2px; }
+#blcks .lst-art ul li a { display:block; line-height:18px; }
+#blcks .lst-art ul li a.cat { display:inline; background:none; padding:0; height:14px; color:#666; text-decoration:none; }
+
+/* content */
+p.intro { font-weight:bold; }
+p.error { font-weight:bold; color:red; }
+
+/* home */
+#blg { float:left; width:639px; padding-right:20px; margin-bottom:20px;  border-right:solid 1px #ccc; }
+#blg .art { min-height:139px; padding-bottom:20px; border-bottom:solid 1px #ccc; margin-bottom:20px; }
+#blg .art:last-child { border:none; }
+#blg .art h2 a { background:none; text-decoration:none; color:inherit; }
+#blg .art img { float:left; width:100px; height:100px; margin-right:10px; }
+#blg .art > a { padding-right:16px; background:transparent url('../images/arrow_small.png') no-repeat 100% 1px; }
+
+#blg #disqus_thread { border-top: solid 1px #ccc; padding-top:20px; }
+#blg .macro-example { background-color:#f0f0f0; padding:20px; margin-bottom: 20px;}
+#blg ul.downloads { padding:20px; margin-bottom: 20px; border: solid 1px #ccc; background-color:#f0f0f0; }
+#blg ul.downloads li a { display:block; line-height: 20px; height:20px; padding-left:20px; background:transparent url('../images/download.png') no-repeat center left; }
+
+/* FORMS */
+::-webkit-input-placeholder { font-family:'Arapey', serif; font-size:14px; }
+:-moz-placeholder { font-family:'Georgia', serif; font-size:14px; font-style:italic; color:#999; }
+fieldset { background-color:#FFF; border:solid 1px #ccc; padding:20px 20px 0px 20px; margin-bottom: 20px; }
+fieldset legend { font-size:14px; }
+form { }
+form textarea { background-color:white; border-radius:3px; border:solid 1px #ccc; padding:5px; }
+form input[type=text] { background-color:white; border-radius:3px; border:solid 1px #ccc; padding:5px; height:18px; }
+form input[type=submit] {  -moz-border-bottom-colors: none; -moz-border-image: none; -moz-border-left-colors: none; -moz-border-right-colors: none; -moz-border-top-colors: none; background-color: #7FBF4D; background-image: -moz-linear-gradient(center top , #7FBF4D, #63A62F); border-color: #63A62F #63A62F #5B992B; border-radius: 3px 3px 3px 3px; border-style: solid; border-width: 1px; box-shadow: 0 1px 0 0 #96CA6D inset; color: #FFFFFF; font: bold 11px/1 "Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif; padding: 5px 5px 4px; text-align: center; text-shadow: 0 -1px 0 #4C9021; }
+form input[type=submit]:hover { background-color: #76B347; background-image: -moz-linear-gradient(center top , #76B347, #5E9E2E); box-shadow: 0 1px 0 0 #8DBF67 inset; cursor: pointer; }
+form input[type=submit]:active { -moz-border-bottom-colors: none; -moz-border-image: none; -moz-border-left-colors: none; -moz-border-right-colors: none; -moz-border-top-colors: none; border-color: #5B992B #5B992B #538C27; border-style: solid; border-width: 1px; box-shadow: 0 0 8px 4px #548C29 inset, 0 1px 0 0 #EEEEEE; }
+form input[type=submit].grey { background-color: #999999; background-image: -moz-linear-gradient(center top , #CCCCCC, #999999); border-color: #999999; box-shadow: 0 1px 0 0 #CCCCCC inset; text-shadow: 0 -1px 0 #999999; }
