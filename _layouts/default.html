@@ -1,81 +1,18 @@
-<!DOCTYPE html>
-<html class="no-js" lang="en-us">
-  <head>
-      <meta charset="utf-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>{{ page.title }}</title>
-      <meta name="description" content="">
-      <meta name="keywords" content="">
-      <meta name="author" content="Jasper Steenweg | My Creativity 2012">
-      <meta name="copyright" content="Copyright My Creativity - Creative Internet Development">
-      <meta name="robots" content="follow,index">
-      <meta http-equiv="Content-Language" content="en-us">
-      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-      <link rel="canonical" href="http://www.mycreativity.nl">
-      <link rel="shortcut icon" href="favicon.ico">
-      <link rel="index" href="http://www.mycreativity.nl">
-      <link href="//fonts.googleapis.com/css?family=Open+Sans+Condensed:300%7CArapey" rel="stylesheet" type="text/css">
-      <link rel="stylesheet" href="{{ "/css/main.css" | absolute_url }}">
-  </head>
-  <body>
+{% include header.html %}    
 
-    <div id="fb-root"></div>
-    <script>(function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = "//connect.facebook.net/nl_NL/all.js#xfbml=1&appId=285798998098782";
-    fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
+<div id="bdy">
 
-    <div id="con">
-      <div id="bdy">
-        <div id="blg">
-         
-          {% for post in site.posts %}
+  <div id="blg">
 
-            <article class="art">
-              <h2>
-                <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-              </h2>
-              <p>
-                  <img src="{{ post.thumb }}" alt="{{ post.title }}">
-                  {{ post.intro }}
-              </p>
-              <a href="{{ post.url }}">Read more</a>
-            </article>
+    <h1>{{ page.title }}</h1>
 
-          {% endfor %}
+    {{ page.content }}
 
-        </div>
+  </div>
 
-        {% include side.html %}
-        <div style="clear:both;"></div>
-      </div>
-      <div id="hdr">
-        <a href="/">
-          <img class="lgo" src="/images/logo.png" alt="mycreativity.nl"></a>
-          <div id="scl">
-            <div class="fb-like" data-href="http://www.mycreativity.nl" data-send="false" data-layout="button_count" data-width="100" data-show-faces="false" data-font="tahoma"></div>
-          </div>
-      </div>
+  {% include side.html %}
 
-      <div id="ftr">
-        <p>mycreativity.nl - all about my creations | copyright &copy; 2009-{{ site.time | date: '%Y' }} mycreativity</p>
-      </div>
+  <div style="clear:both;"></div>
+</div>
 
-    </div>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script src="{{ "/scripts/app.js" | absolute_url }}"></script>
-
-    <script type="text/javascript">
-      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-    </script>
-    <script type="text/javascript">
-      var pageTracker = _gat._getTracker("UA-714262-3");
-      pageTracker._trackPageview();
-    </script>
-  </body>
-</html>
+{% include footer.html %}  

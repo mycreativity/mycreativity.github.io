@@ -1,0 +1,29 @@
+{% include header.html %}    
+
+<div id="bdy">
+	
+	<div id="blg">
+		
+		{% for post in site.posts %}
+
+		<article class="art">
+			<h2>
+				<a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+			</h2>
+			<p>
+				<img src="{{ post.thumb }}" alt="{{ post.title }}">
+				{{ post.intro }}
+			</p>
+			<a href="{{ post.url }}">Read more</a>
+		</article>
+
+		{% endfor %}
+
+	</div>
+
+	{% include side.html %}
+
+	<div style="clear:both;"></div>
+</div>
+
+{% include footer.html %}  
