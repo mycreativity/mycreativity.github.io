@@ -11,8 +11,8 @@ This website is running on my [Raspberry Pi][raspberry-pi] with a 700 MHz ARM pr
 
 I am installing the software from packages, [documentation available at Google Code][memcached-docs], with apt-get.
 
-{% highlight ruby %}
-apt-get install memcached
+{% highlight shell %}
+$> apt-get install memcached
 {% endhighlight %}
 
 [memcached]: http://memcached.org/

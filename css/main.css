@@ -41,7 +41,8 @@ p { margin-bottom:20px; font-size: 12px; color:#666; line-height: 18px; }
 a { color:#ca278c; }
 a:hover { text-decoration:none; }
 
-pre { margin-bottom:20px; display: block; }
+.highlight { margin: 0; }
+.highlight pre { padding: 20px; }
 
 #con { position:relative; margin:0 auto; width:960px; }
 
