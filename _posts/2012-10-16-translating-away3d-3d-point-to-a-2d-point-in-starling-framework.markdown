@@ -16,7 +16,7 @@ categories:	[as3, away3d, starling, adobe air]
     <param name="bgcolor" value="">
     <param name="wmode" value="direct">
     <!--[if !IE]>-->
-    <object type="application/x-shockwave-flash" data="/workspace/flash/DemoAway3DWithStarling.swf" width="640" height="280">
+    <object type="application/x-shockwave-flash" data="/files/DemoAway3DWithStarling.swf" width="640" height="280">
         <param name="movie" value="/files/DemoAway3DWithStarling.swf">
         <param name="menu" value="false">
         <param name="scale" value="noScale">
