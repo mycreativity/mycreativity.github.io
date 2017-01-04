@@ -25,8 +25,8 @@ categories:	[as3, away3d, starling, adobe air]
         <param name="bgcolor" value=""> 
         <param name="wmode" value="direct">
     <!--<![endif]-->
-        <a href="/web/20140113143631/http://www.adobe.com/go/getflash">
-            <img src="/web/20140113143631im_/http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player">
+        <a href="http://www.adobe.com/go/getflash">
+            <img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player">
         </a>
     <!--[if !IE]>-->
     </object>
